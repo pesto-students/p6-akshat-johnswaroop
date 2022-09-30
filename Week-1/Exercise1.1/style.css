@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    width: 40px;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    height: 78%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.song-info {
+    display: flex;
+    flex-grow: 1;
+    max-height: 45%;
+    padding-left: 50px;
+    background-color: #464646;
+}
+
+.album-art {
+    height: 80%;
+    object-fit: contain;
+    margin: auto 25px;
+}
+
+.info {
+    color: white;
+    height: 80%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info h1 {
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+
+.info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.more-options {
+    display: flex;
+    column-gap: 10px;
+}
+
+.more-options button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.play-list {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.play-list td {
+    width: 25%;
+    font-size: 14px;
+    padding: 1px 15px;
+    border: none;
+    outline: none;
+}
+
+.sync p {
+    color: blue;
+    outline: 0.5px solid rgb(0, 0, 0);
+    width: fit-content;
+    font-size: 14px;
+}
+
+.play-list tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.current-player {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+    background-color: #43689c;
+    align-items: center;
+    width: 100%;
+
+}
+
+.album-preview{
+    height: 85%;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.song-name{
+    color: white;
+    margin-left: 10px;
+}
+
+.controls{
+    color: white;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 10px;
+}
