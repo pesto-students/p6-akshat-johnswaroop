@@ -87,7 +87,6 @@ html {
     background-color: rgba(220, 220, 220, 0.199);
     padding: 15px 10px;
     border-radius: 8px;
- 
 }
 
 .signup-form button {
@@ -99,11 +98,11 @@ html {
     border-radius: 15px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 20px;   
+    font-size: 20px;
     margin-top: 50px;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -114,12 +113,19 @@ html {
     color: white;
 }
 
-.footer h1{
+.footer h1 {
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.more-links{
+.more-links {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    margin-top: 20px;
+    row-gap: 15px;
+    justify-content: center;
+}
+.more-links a {
+    color: white;
 }
