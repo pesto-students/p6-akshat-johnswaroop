@@ -23,6 +23,7 @@ main {
 }
 
 .center-text {
+    /* center text */
     position: absolute;
     left: 0;
     right: 0;
