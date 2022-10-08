@@ -1,0 +1,84 @@
+*,
+body,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.center-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 50px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.part {
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: 100;
+}
+
+.red {
+    background-color: red;
+    transform-origin: top left;
+}
+.blue {
+    background-color: blue;
+    transform-origin: bottom left;
+}
+.green {
+    background-color: green;
+    transform-origin: bottom right;
+}
+.yellow {
+    background-color: yellow;
+    transform-origin: top right;
+}
+
+.box:hover .red {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+}
+.box:hover .blue {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+}
+.box:hover .yellow {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+}
+.box:hover .green {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+}
