@@ -1,3 +1,7 @@
+/*
+Write a function called vowelCount which accepts a string and returns a map where the keys arenumbers and the values are the count of the vowels in the string.
+*/
+
 const vowelCount = (str) => {
     str = str.toLowerCase()
     const VOWELS = ['a', 'e', 'i', 'o', 'u'];
